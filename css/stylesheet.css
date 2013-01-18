@@ -15,17 +15,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-#home {
+#strip {
   background: rgba(0, 0, 0, .65);
   position: absolute;
   left: 0px;
-  bottom: 100px;
+  top: 50px;
   height: 165px;
   width: 100%;
   min-width: 880px;
   text-align: center;
 }
-#column {
+#strip #column {
   text-align: left;
   width: 100%;
   min-width: 870px;
@@ -36,11 +36,11 @@ body {
   padding: 0px;
   overflow: hidden;
 }
-#row {
+#strip #row {
   display: table-row;
   height: 165px;
 }
-hgroup {
+#strip hgroup {
   position: relative;
   top: 3px;
   left: 10px;
@@ -49,36 +49,36 @@ hgroup {
   vertical-align: middle;
   padding-right: 50px;
 }
-h1, h2 {
+#strip h1, #strip h2 {
   margin: 0px;
   color: #FFFFFF;
   font-weight: normal;
 }
-h1 {
+#strip h1 {
   font-family: 'NovecentoWideLight';
   font-size: 72px;
   font-weight: normal;
   line-height: 54px;
   vertical-align: middle;
 }
-h1 span:first-child {
+#strip h1 span:first-child {
   margin-left: 4px;
 }
-h1 span {
+#strip h1 span {
   font-family: 'OCRAStd';
   font-size: 20px;
   font-weight: bold;
   line-height: inherit;
   vertical-align: inherit;
 }
-h2 {
+#strip h2 {
   font-family: 'PhoenicaStd';
   font-size: 26px;
   letter-spacing: 6px;
   text-indent: 6px;
   margin-top: 2px;
 }
-#welcome {
+#strip #welcome {
   font-family: 'PhoenicaStd';
   font-size: 20px;
   text-transform: uppercase;
@@ -89,6 +89,86 @@ h2 {
   vertical-align: middle;
   display: table-cell;
   -webkit-font-smoothing: antialiased;
+}
+#wrapper {
+  position: absolute;
+  top: 250px;
+  text-align: center;
+  width: 100%;
+}
+#content {
+  display: inline-block;
+  background: rgba(0, 0, 0, .65);
+  height: 335px;
+  overflow: hidden;
+}
+#content #actions {
+  float: left;
+  padding: 0px 20px;
+}
+#content #actions > div {
+  height: 84px;
+}
+#content iframe {
+  background: #000000;
+  border: 10px solid #000000;
+}
+
+input[type='button'] {
+  padding: 10px 17px;
+  font-size: 20px;
+  line-height: normal;
+  -webkit-font-smoothing: auto;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  position: relative;
+  font-weight: normal;
+  width: 200px;
+  height: auto;
+  -webkit-appearance: button;
+  position: relative;
+  top: 19px;
+}
+input[type='button'].blue {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  border: 1px solid #0d65d6;
+  background-color: #1c78ee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2c88fe), color-stop(100%, #1c78ee));
+  background-image: -webkit-linear-gradient(#2c88fe,#1c78ee);
+  background-image: -moz-linear-gradient(#2c88fe,#1c78ee);
+  background-image: -o-linear-gradient(#2c88fe,#1c78ee);
+  background-image: linear-gradient(#2c88fe,#1c78ee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF2C88FE', endColorstr='#FF1C78EE');
+}
+input[type='button'].blue:hover {
+    background-image: none;
+    filter: none;
+    background-color: #208af1;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #339afe), color-stop(100%, #208af1));
+    background-image: -webkit-linear-gradient(#339afe,#208af1);
+    background-image: -moz-linear-gradient(#339afe,#208af1);
+    background-image: -o-linear-gradient(#339afe,#208af1);
+    background-image: linear-gradient(#339afe,#208af1);
+    background-repeat: repeat-x;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF339AFE', endColorstr='#FF208AF1');
+    border-color: #085cba;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
 }
 
 @font-face{ 
