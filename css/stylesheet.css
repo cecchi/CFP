@@ -90,6 +90,10 @@ body {
   display: table-cell;
   -webkit-font-smoothing: antialiased;
 }
+#strip #welcome span {
+  font-style: italic;
+  font-weight: bold;
+}
 #wrapper {
   position: absolute;
   top: 250px;
